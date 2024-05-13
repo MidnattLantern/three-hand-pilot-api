@@ -66,8 +66,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
-    'flynarc-api-824d94b4a80f.herokuapp.com',
-    '8000-midnattlante-flynarcapi-cwm37l0sc31.ws-eu111.gitpod.io',
+    '8000-midnattlant-threehandpi-aadjc5fvl61.ws-eu111.gitpod.io',
     ]
 
 
