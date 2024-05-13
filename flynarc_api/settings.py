@@ -67,6 +67,7 @@ ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
     '8000-midnattlant-threehandpi-aadjc5fvl61.ws-eu111.gitpod.io',
+    'https://three-hand-pilot-api-e7bf27830cfb.herokuapp.com',
     ]
 
 
