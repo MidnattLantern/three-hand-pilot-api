@@ -4,8 +4,10 @@ from rest_framework import serializers
 
 class CurrentUserSerializer(UserDetailsSerializer):
     """ Docstring """
-    user_authentication_id = serializers.ReadOnlyField(source='profile.id')
-    user_authentication_image = serializers.ReadOnlyField(source='profile.image.url')
+#    user_authentication_id = serializers.ReadOnlyField(source='profile.id')
+    user_authentication_id = serializers.ReadOnlyField(source='user_authentication.id')
+#    user_authentication_image = serializers.ReadOnlyField(source='profile.image.url')
+    user_authentication_image = serializers.ReadOnlyField(source='user_authentication.image.url')
 
     class Meta(UserDetailsSerializer.Meta):
         fields = UserDetailsSerializer.Meta.fields + (
