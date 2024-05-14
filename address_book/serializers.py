@@ -21,4 +21,13 @@ class AddressSerializer(serializers.ModelSerializer):
             'is_owner',
             'updated_at',
             'partnering_end',
+            'address_line1',
+            'address_line2',
+            'city',
+            'postal_code',
+            'contact_person_name',
+            'contact_phone_number',
+            'contact_email',
+            'latitude',
+            'longitude',
         ]
