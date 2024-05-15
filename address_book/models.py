@@ -18,9 +18,8 @@ class Address(models.Model):
     latitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True, null=True)
     longitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True, null=True)
 
-
-
     class Meta:
+        """ Docstring """
         ordering = ['-updated_at']
 
     def __str__(self):

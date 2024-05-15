@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from address_book.models import Address
+from product.models import Product
 
 
-class AddressSerializer(serializers.ModelSerializer):
+class ProductSerializer(serializers.ModelSerializer):
     """ Docstring """
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
@@ -10,23 +10,15 @@ class AddressSerializer(serializers.ModelSerializer):
     def get_is_owner(self, obj):
         request = self.context['request']
         return request.user == obj.owner
-
+    
     class Meta:
         """ Docstring """
-        model = Address
+        model = Product
         fields = [
             'id',
             'owner',
             'is_owner',
             'updated_at',
-            'partnering_end',
-            'address_line1',
-            'address_line2',
-            'city',
-            'postal_code',
-            'contact_person_name',
-            'contact_phone_number',
-            'contact_email',
-            'latitude',
-            'longitude',
+            'product_name',
+            'serial_number_prefix',
         ]

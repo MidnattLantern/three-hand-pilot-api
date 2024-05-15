@@ -97,6 +97,7 @@ INSTALLED_APPS = [
     'user_authentication',
     'pilotpost',
     'address_book',
+    'product',
 ]
 
 SITE_ID = 1

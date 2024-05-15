@@ -29,4 +29,5 @@ urlpatterns = [
     path('', include('user_authentication.urls')),
     path('', include('pilotpost.urls')),
     path('', include('address_book.urls')),
+    path('', include('product.urls')),
 ]
