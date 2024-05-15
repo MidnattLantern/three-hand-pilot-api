@@ -13,7 +13,8 @@ class Address(models.Model):
     postal_code = models.CharField(max_length=20, blank=True, null=True)
     contact_person_name = models.CharField(max_length=255, blank=True, null=True)
     contact_phone_number = models.CharField(max_length=20, blank=True, null=True)
-    contact_email = models.EmailField(blank=True, null=True)
+#    contact_email = models.EmailField(blank=True, null=True)
+    contact_email = models.CharField(max_length=50, blank=True, null=True)
     latitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True, null=True)
     longitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True, null=True)
 
