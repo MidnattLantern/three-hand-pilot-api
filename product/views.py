@@ -10,9 +10,12 @@ class ProductList(generics.ListCreateAPIView):
     serializer_class = ProductSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Product.objects.all().order_by('-updated_at')
-#    filter_backends = [
-#        'owner__userauthentication',
-#    ]
+    filter_backends = [
+        DjangoFilterBackend,
+    ]
+    filterset_fields = [
+        'owner__userauthentication',
+    ]
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
