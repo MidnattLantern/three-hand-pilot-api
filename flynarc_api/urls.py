@@ -30,4 +30,5 @@ urlpatterns = [
     path('', include('pilotpost.urls')),
     path('', include('address_book.urls')),
     path('', include('product.urls')),
+    path('', include('serial_number.urls')),
 ]

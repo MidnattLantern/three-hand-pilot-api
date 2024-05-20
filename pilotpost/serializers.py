@@ -3,6 +3,7 @@ from pilotpost.models import PilotPost
 
 
 class PilotPostSerializer(serializers.ModelSerializer):
+    """ Docstring """
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
 
