@@ -11,7 +11,7 @@ class SerialNumberList(generics.ListCreateAPIView):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = SerialNumber.objects.all()
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['product']
+    filterset_fields = ['link_product_name']
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)

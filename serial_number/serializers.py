@@ -23,8 +23,8 @@ class SerialNumberSerializer(serializers.ModelSerializer):
         fields = [
             'id',
             'owner',
-            'product',
-            'partnering_end',
+            'link_product_name',
+            'link_partnering_end',
             'is_owner',
             'user_authentication_id',
             'updated_at',

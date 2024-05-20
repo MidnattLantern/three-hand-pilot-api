@@ -69,6 +69,7 @@ ALLOWED_HOSTS = [
     '8000-midnattlant-threehandpi-aadjc5fvl61.ws-eu111.gitpod.io',
     'https://three-hand-pilot-api-e7bf27830cfb.herokuapp.com',
     'three-hand-pilot-api-e7bf27830cfb.herokuapp.com',
+    '8000-midnattlant-threehandpi-aadjc5fvl61.ws-eu114.gitpod.io',
     ]
 
 
